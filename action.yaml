@@ -19,7 +19,8 @@ inputs:
 
 runs:
   using: "docker"
-  image: "docker://public.ecr.aws/l7o7z1g8/actions/gha-publish-evidence-item:main-67ecddf177bea5bc3d61e1418bf3b6e4ea9e01e9" 
+  # image: "docker://public.ecr.aws/l7o7z1g8/actions/gha-publish-evidence-item:main-67ecddf177bea5bc3d61e1418bf3b6e4ea9e01e9" 
+  image: "docker://ghcr.io/karthiknaveene/gha-action/gha-publish-evidence-action:latest"
   env:
     CLOUDBEES_API_URL: ${{ inputs.cloudbees-url }}
     CONTENT: ${{ inputs.content }}
