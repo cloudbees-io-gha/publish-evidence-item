@@ -1,5 +1,5 @@
-name: 'Publish evidence to Platform'
-description: "Capture job-level evidence data and publish it to the CloudBees platform."
+name: 'Publish evidence to Unify'
+description: "Capture job-level evidence data and publish it to CloudBees Unify."
 
 branding:
   icon: 'command'
@@ -7,7 +7,7 @@ branding:
 
 inputs:
   cloudbees-url:
-    description: 'The CloudBees platform URL.'
+    description: 'CloudBees Unify URL.'
     required: false
     default: "https://api.cloudbees.io"
   content:
