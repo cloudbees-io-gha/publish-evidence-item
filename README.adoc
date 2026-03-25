@@ -1,12 +1,12 @@
-= Publish an evidence item to the CloudBees platform
+= Publish an evidence item to CloudBees Unify
  
-Use this GitHub Action (GHA) to capture job-level evidence data in Markdown format in a GHA workflow run and publish it to the CloudBees platform.
+Use this GitHub Action (GHA) to capture job-level evidence data in Markdown format in a GHA workflow run and publish it to CloudBees Unify.
 The evidence is displayed on the *Evidence* tab of *Run details* for your run.
 For more information, refer to link:https://docs.cloudbees.com/docs/cloudbees-platform/latest/workflows/evidence[the evidence documentation].
 
 == Prerequisites
 
-Set up the CloudBees platform and GHA to work together, providing key features of the platform to GHA workflows.
+Set up CloudBees Unify and GHA to work together, providing key features of the platform to GHA workflows.
 Refer to link:https://docs.cloudbees.com/docs/cloudbees-platform/latest/github-actions/gha-getting-started[Getting started with GHA integration] for more information.
 
 == Inputs
@@ -27,7 +27,7 @@ Refer to link:https://docs.cloudbees.com/docs/cloudbees-platform/latest/github-a
 | `cloudbees-url`
 | String
 | No
-| The CloudBees platform URL.
+| The CloudBees Unify URL.
 The default value is `"https://api.cloudbees.io"`.
 
 |===
@@ -56,7 +56,7 @@ steps:
 
 === Full workflow and run example
 
-The following GHA workflow example uses this action to publish evidence to the CloudBees platform.
+The following GHA workflow example uses this action to publish evidence to CloudBees Unify.
 
 .Example GHA workflow YAML file
 [.collapsible]
@@ -99,6 +99,6 @@ link:https://opensource.org/license/mit/[MIT license].
 
 == References
  
-* Learn more about link:https://docs.cloudbees.com/docs/cloudbees-platform/latest/github-actions/intro[Using GitHub Actions with the CloudBees platform].
-* Learn about link:https://docs.cloudbees.com/docs/cloudbees-platform/latest/[the CloudBees platform].
+* Learn more about link:https://docs.cloudbees.com/docs/cloudbees-platform/latest/github-actions/intro[Using GitHub Actions with CloudBees Unify].
+* Learn about link:https://docs.cloudbees.com/docs/cloudbees-platform/latest/[CloudBees Unify].
  
