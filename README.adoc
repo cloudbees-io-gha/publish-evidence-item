@@ -6,7 +6,7 @@ For more information, refer to link:https://docs.cloudbees.com/docs/cloudbees-pl
 
 == Prerequisites
 
-Set up CloudBees Unify and GHA to work together, providing key features of the platform to GHA workflows.
+Set up CloudBees Unify and GHA to work together, providing key features of Unify to GHA workflows.
 Refer to link:https://docs.cloudbees.com/docs/cloudbees-platform/latest/github-actions/gha-getting-started[Getting started with GHA integration] for more information.
 
 == Inputs
