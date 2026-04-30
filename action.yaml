@@ -16,10 +16,15 @@ inputs:
   format:
     description: 'The format of the evidence content.'
     required: false
-
+  job-id:
+    description: 'The ID of the job to associate the evidence with.'
+    required: false
+    default: ${{ job.check_run_id }}
+    
 runs:
   using: "docker"
-  image: "docker://public.ecr.aws/l7o7z1g8/actions/gha-publish-evidence-item:main-9be3886ac98b5e268459e535d92fb4b8c161305c" 
+  image: "docker://public.ecr.aws/l7o7z1g8/actions/gha-publish-evidence-item:main-5b51fa5a33bf6f1b3c640e23680889b7c9e516b4" 
   env:
     CLOUDBEES_API_URL: ${{ inputs.cloudbees-url }}
     CONTENT: ${{ inputs.content }}
+    JOB_CHECK_RUN_ID: ${{ inputs.job-id }}
